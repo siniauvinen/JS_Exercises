@@ -39,8 +39,44 @@
 				"http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg"
 			];
 		</pre>
+
+
+
 		<script>
-            <!-- JavaScript goes here -->
+            document.write("<h2><u> Exercise no 1 answer </h2></u>");
+			document.write("<strong> ''If I had nine hours to chop down a tree, I'd spend the first six sharpening my ax.'' </strong> <br> -- Abraham Lincoln");
+
+			document.write("<h2><u> Exercise no 2 answer </h2></u>");
+			function repeatingText (x) {
+				for (i=1; i<=x; i++) {
+					document.write("This is a line no " + i + "<br>");
+				}
+			}
+			repeatingText(10);
+
+			document.write("<h2><u> Exercise no 3 answer </h2></u>");
+			document.write("What browser is the user using? If Mozilla, new pop-up window will take the user to Mozilla webpages, else to Iltasanomat webpages")
+			if (navigator.userAgent.indexOf("Mozilla")) {
+				window.open('http://www.mozilla.org');
+			} else {
+				window.open('http://www.is.fi');
+			}
+
+			document.write("<h2><u> Exercise no 4 answer </h2></u>");
+			document.write("Exercise no 4 is in its own file.")
+
+			document.write("<h2><u> Exercise no 5 answer </h2></u>");
+			var number = Math.round(Math.random() *2);
+			var images =[
+				"http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg", 
+				"http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg", 
+				"http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg"
+			];
+			document.write('<img src = "http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg">');
+
+			document.images[0].src = images[number];
+
+
 		</script>
 	</body>
 </html>
