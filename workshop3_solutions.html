@@ -14,7 +14,7 @@
         <p>
             <button onclick="alert('Clicked me!' + new Date())" >Click me</button>
             <button onclick="showDate();" >Show Date</button>
-            <button onclick="showTable2();">Show Table</button>
+            <button onclick="showTable();">Show Table</button>
             <button onclick="geoLocation()">Geolocation</button>
         </p>
         <ol>
@@ -192,6 +192,7 @@ over&nbsp;it. Output "Stepped over my a mouse!" on the console.</li>
                     return false;
                 }
             }
+
             function showXY(event){
                 var x = event.clientX;
                 var y = event.clientY;
